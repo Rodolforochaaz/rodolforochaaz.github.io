@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Rodolfo Vicentini Rocha - Desenvolvedor de Software especializado em IA e Automação">
-    <meta name="keywords" content="desenvolvedor, software, python, javascript, ia, automação">
+    <meta name="keywords" content="desenvolvedor, software, python, javascript, ia, automação, web development">
     <meta name="author" content="Rodolfo Vicentini Rocha">
+    <meta name="theme-color" content="#0066ff">
     
     <title>Rodolfo Vicentini Rocha - Desenvolvedor & Especialista em IA</title>
-    <!-- Fonts -->
+    
+    <!-- Preconnect para melhor performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +31,7 @@
                 <span class="logo-text">Rodolfo<span class="logo-dot">.</span>dev</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#home" class="nav-link active">Início</a></li>
                 <li><a href="#about" class="nav-link">Sobre</a></li>
                 <li><a href="#skills" class="nav-link">Habilidades</a></li>
                 <li><a href="#projects" class="nav-link">Projetos</a></li>
@@ -50,14 +56,14 @@
                 <!-- Profile Image -->
                 <div class="hero-image">
                     <div class="image-wrapper">
-                        <img src="rodolfo.jpg" alt="Rodolfo Vicentini Rocha" class="profile-img">
+                        <img src="rodolfo.jpg" alt="Rodolfo Vicentini Rocha - Desenvolvedor de Software" class="profile-img">
                         <div class="image-glow"></div>
                     </div>
                     <div class="floating-techs">
-                        <div class="tech-icon tech-1"><i class="fab fa-python"></i></div>
-                        <div class="tech-icon tech-2"><i class="fab fa-js-square"></i></div>
-                        <div class="tech-icon tech-3"><i class="fas fa-brain"></i></div>
-                        <div class="tech-icon tech-4"><i class="fas fa-robot"></i></div>
+                        <div class="tech-icon tech-1" title="Python"><i class="fab fa-python"></i></div>
+                        <div class="tech-icon tech-2" title="JavaScript"><i class="fab fa-js-square"></i></div>
+                        <div class="tech-icon tech-3" title="Inteligência Artificial"><i class="fas fa-brain"></i></div>
+                        <div class="tech-icon tech-4" title="Automação"><i class="fas fa-robot"></i></div>
                     </div>
                 </div>
                 
@@ -307,7 +313,7 @@
                         <img src="web_development.jpg" alt="Site Janaína Bezerra">
                         <div class="project-overlay">
                             <div class="project-actions">
-                                <a href="https://janainabezerrapsi.com.br/" target="_blank" class="project-link">
+                                <a href="https://janainabezerrapsi.com.br/" target="_blank" rel="noopener noreferrer" class="project-link" title="Abrir projeto">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -332,7 +338,7 @@
                         <img src="web_development.jpg" alt="Site Decor Mais">
                         <div class="project-overlay">
                             <div class="project-actions">
-                                <a href="http://decormaismovelaria.com.br/" target="_blank" class="project-link">
+                                <a href="http://decormaismovelaria.com.br/" target="_blank" rel="noopener noreferrer" class="project-link" title="Abrir projeto">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -357,7 +363,7 @@
                         <img src="ai_concept.jpg" alt="AI Tech Links">
                         <div class="project-overlay">
                             <div class="project-actions">
-                                <a href="https://aitech.voyocompany.com/links/" target="_blank" class="project-link">
+                                <a href="https://aitech.voyocompany.com/links/" target="_blank" rel="noopener noreferrer" class="project-link" title="Abrir projeto">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -382,7 +388,7 @@
                         <img src="ai_automation.jpg" alt="Automação Xiaomi">
                         <div class="project-overlay">
                             <div class="project-actions">
-                                <span class="project-private">
+                                <span class="project-private" title="Projeto privado">
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </div>
@@ -407,7 +413,7 @@
                         <img src="data_analysis.jpg" alt="Chatbot N8N">
                         <div class="project-overlay">
                             <div class="project-actions">
-                                <span class="project-private">
+                                <span class="project-private" title="Projeto privado">
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </div>
@@ -443,11 +449,9 @@
                     <div class="timeline-date">2023 - Atual</div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Assistente de TI</h3>
-                        <h4 class="timeline-company">Xiaomi Brasil</h4>
+                        <p class="timeline-company">Xiaomi Brasil</p>
                         <p class="timeline-description">
-                            Desenvolvimento de automações para monitoramento de Google Maps, análise de dados de lojas físicas 
-                            e geração de relatórios automatizados. Responsável por otimizar processos internos através de 
-                            soluções tecnológicas inovadoras.
+                            Desenvolvimento de automações em Python, análise de dados com Pandas, integração de sistemas e suporte técnico especializado.
                         </p>
                         <div class="timeline-skills">
                             <span class="skill-tag">Python</span>
@@ -459,37 +463,35 @@
                 </div>
                 
                 <div class="timeline-item">
-                    <div class="timeline-date">2022 - Atual</div>
+                    <div class="timeline-date">2022 - 2023</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Tecnologia em ADS</h3>
-                        <h4 class="timeline-company">Centro Universitário Católico Ítalo Brasileiro</h4>
+                        <h3 class="timeline-title">Desenvolvedor Web Freelancer</h3>
+                        <p class="timeline-company">Voyo Company</p>
                         <p class="timeline-description">
-                            Cursando 4° semestre em Análise e Desenvolvimento de Sistemas. Foco em desenvolvimento de software, 
-                            banco de dados, engenharia de software e metodologias ágeis.
+                            Criação de sites responsivos, landing pages, integração com APIs e otimização SEO para diversos clientes.
                         </p>
                         <div class="timeline-skills">
-                            <span class="skill-tag">Algoritmos</span>
-                            <span class="skill-tag">Banco de Dados</span>
-                            <span class="skill-tag">Eng. Software</span>
-                            <span class="skill-tag">Metodologias Ágeis</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Responsive Design</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-date">2021 - Atual</div>
                     <div class="timeline-content">
-                        <h3 class="timeline-title">Desenvolvedor Freelancer</h3>
-                        <h4 class="timeline-company">Projetos Independentes</h4>
+                        <h3 class="timeline-title">Estudante de Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="timeline-company">Centro Universitário Católico Ítalo Brasileiro</p>
                         <p class="timeline-description">
-                            Desenvolvimento de sites profissionais, sistemas de automação e chatbots com IA. 
-                            Experiência em projetos para diferentes segmentos como saúde, móveis e tecnologia.
+                            Aprendizado contínuo em desenvolvimento de software, arquitetura de sistemas, banco de dados e metodologias ágeis.
                         </p>
                         <div class="timeline-skills">
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">N8N</span>
-                            <span class="skill-tag">Freelancing</span>
+                            <span class="skill-tag">Algoritmos</span>
+                            <span class="skill-tag">Estrutura de Dados</span>
+                            <span class="skill-tag">Banco de Dados</span>
+                            <span class="skill-tag">Engenharia de Software</span>
                         </div>
                     </div>
                 </div>
@@ -513,7 +515,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Telefone</h4>
-                            <p>+55 11 95964-7893</p>
+                            <p><a href="tel:+5511959647893">+55 11 95964-7893</a></p>
                         </div>
                     </div>
                     
@@ -523,7 +525,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>E-mail</h4>
-                            <p>devcompany.ia@gmail.com</p>
+                            <p><a href="mailto:devcompany.ia@gmail.com">devcompany.ia@gmail.com</a></p>
                         </div>
                     </div>
                     
@@ -533,7 +535,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Website</h4>
-                            <p>aitech.voyocompany.com/links</p>
+                            <p><a href="https://aitech.voyocompany.com/links/" target="_blank" rel="noopener noreferrer">aitech.voyocompany.com/links</a></p>
                         </div>
                     </div>
                 </div>
@@ -570,13 +572,13 @@
                     <p>&copy; 2025 Rodolfo Vicentini Rocha. Todos os direitos reservados.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://aitech.voyocompany.com/links/" target="_blank" class="social-link">
+                    <a href="https://aitech.voyocompany.com/links/" target="_blank" rel="noopener noreferrer" class="social-link" title="Website">
                         <i class="fas fa-globe"></i>
                     </a>
-                    <a href="mailto:devcompany.ia@gmail.com" class="social-link">
+                    <a href="mailto:devcompany.ia@gmail.com" class="social-link" title="E-mail">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="tel:+5511959647893" class="social-link">
+                    <a href="tel:+5511959647893" class="social-link" title="Telefone">
                         <i class="fas fa-phone"></i>
                     </a>
                 </div>
@@ -589,8 +591,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
