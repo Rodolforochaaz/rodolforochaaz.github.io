@@ -1,5 +1,6 @@
 // ========================================
-// PORTFOLIO JAVASCRIPT - ROBUST VERSION
+// PORTFOLIO JAVASCRIPT - APRIMORADO
+// Advanced Interactions & Animations
 // ========================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -19,11 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     const contactForm = document.getElementById('contactForm');
     const scrollArrow = document.querySelector('.scroll-arrow');
+    const techItems = document.querySelectorAll('.tech-item');
+    const highlightItems = document.querySelectorAll('.highlight');
     
     // State variables
     let isMenuOpen = false;
     let isScrolling = false;
     let currentSection = 'home';
+    let animationsTriggered = new Set();
     
     // ========================================
     // UTILITY FUNCTIONS
@@ -80,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const elementPosition = element.offsetTop - offset;
         const startPosition = window.pageYOffset;
         const distance = elementPosition - startPosition;
-        const duration = 800;
+        const duration = 1000;
         let start = null;
         
         function animation(currentTime) {
@@ -156,11 +160,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle navbar scroll effect
     function handleNavbarScroll() {
         if (window.pageYOffset > 50) {
+            navbar.style.background = 'rgba(10, 22, 40, 0.98)';
+            navbar.style.backdropFilter = 'blur(25px)';
+            navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
+        } else {
             navbar.style.background = 'rgba(10, 22, 40, 0.95)';
             navbar.style.backdropFilter = 'blur(20px)';
-        } else {
-            navbar.style.background = 'rgba(10, 22, 40, 0.9)';
-            navbar.style.backdropFilter = 'blur(20px)';
+            navbar.style.boxShadow = 'none';
         }
     }
     
@@ -174,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             particlesJS('particles-js', {
                 particles: {
                     number: {
-                        value: window.innerWidth > 768 ? 80 : 40,
+                        value: window.innerWidth > 768 ? 100 : 50,
                         density: { enable: true, value_area: 800 }
                     },
                     color: { value: '#0066ff' },
@@ -183,12 +189,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         stroke: { width: 0, color: '#000000' }
                     },
                     opacity: {
-                        value: 0.5,
-                        random: false,
-                        anim: { enable: false }
+                        value: 0.6,
+                        random: true,
+                        anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false }
                     },
                     size: {
-                        value: 3,
+                        value: 4,
                         random: true,
                         anim: { enable: false }
                     },
@@ -197,13 +203,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         distance: 150,
                         color: '#0066ff',
                         opacity: 0.4,
-                        width: 1
+                        width: 1.5
                     },
                     move: {
                         enable: true,
-                        speed: 2,
+                        speed: 2.5,
                         direction: 'none',
-                        random: false,
+                        random: true,
                         straight: false,
                         out_mode: 'out',
                         bounce: false
@@ -220,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         grab: { distance: 400, line_linked: { opacity: 1 } },
                         bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
                         repulse: { distance: 200, duration: 0.4 },
-                        push: { particles_nb: 4 },
+                        push: { particles_nb: 5 },
                         remove: { particles_nb: 2 }
                     }
                 },
@@ -232,8 +238,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animate counter numbers
     function animateCounters() {
         statNumbers.forEach(counter => {
+            if (animationsTriggered.has(counter)) return;
+            
             const target = parseInt(counter.getAttribute('data-target'));
-            const increment = target / 200;
+            const increment = target / 100;
             let current = 0;
             
             const updateCounter = () => {
@@ -247,16 +255,21 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             updateCounter();
+            animationsTriggered.add(counter);
         });
     }
     
     // Animate skill bars
     function animateSkillBars() {
         skillBars.forEach(bar => {
+            if (animationsTriggered.has(bar)) return;
+            
             const width = bar.getAttribute('data-width');
             setTimeout(() => {
                 bar.style.width = width + '%';
             }, 200);
+            
+            animationsTriggered.add(bar);
         });
     }
     
@@ -281,10 +294,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 charIndex++;
             }
             
-            let typeSpeed = isDeleting ? 100 : 150;
+            let typeSpeed = isDeleting ? 80 : 120;
             
             if (!isDeleting && charIndex === currentText.length) {
-                typeSpeed = 2000;
+                typeSpeed = 2500;
                 isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
@@ -298,6 +311,19 @@ document.addEventListener('DOMContentLoaded', function() {
         typeText();
     }
     
+    // Add parallax effect to tech items
+    function initParallaxEffect() {
+        document.addEventListener('mousemove', (e) => {
+            const techItems = document.querySelectorAll('.tech-icon');
+            const x = (window.innerWidth / 2 - e.clientX) / 50;
+            const y = (window.innerHeight / 2 - e.clientY) / 50;
+            
+            techItems.forEach(item => {
+                item.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        });
+    }
+    
     // ========================================
     // SCROLL ANIMATIONS
     // ========================================
@@ -305,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Intersection Observer for animations
     function initScrollAnimations() {
         const observerOptions = {
-            threshold: 0.1,
+            threshold: 0.15,
             rootMargin: '0px 0px -50px 0px'
         };
         
@@ -332,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Observe other elements
-        const animatedElements = document.querySelectorAll('.project-card, .highlight, .contact-item, .timeline-item');
+        const animatedElements = document.querySelectorAll('.project-card, .highlight, .contact-item, .timeline-item, .tech-item');
         animatedElements.forEach(element => {
             observer.observe(element);
         });
@@ -360,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         setTimeout(() => {
                             card.style.opacity = '1';
                             card.style.transform = 'translateY(0)';
-                        }, 100);
+                        }, 50);
                     } else {
                         card.style.opacity = '0';
                         card.style.transform = 'translateY(20px)';
@@ -409,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.disabled = true;
             
             setTimeout(() => {
-                showNotification('Mensagem enviada com sucesso!', 'success');
+                showNotification('Mensagem enviada com sucesso! Obrigado pelo contato.', 'success');
                 this.reset();
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
@@ -440,12 +466,17 @@ document.addEventListener('DOMContentLoaded', function() {
             right: 20px;
             background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#0066ff'};
             color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 1.2rem 1.8rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
             z-index: 9999;
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
+            transform: translateX(400px);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            max-width: 400px;
         `;
         
         document.body.appendChild(notification);
@@ -457,11 +488,28 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Remove after delay
         setTimeout(() => {
-            notification.style.transform = 'translateX(100%)';
+            notification.style.transform = 'translateX(400px)';
             setTimeout(() => {
                 document.body.removeChild(notification);
             }, 300);
         }, 4000);
+    }
+    
+    // ========================================
+    // INTERACTIVE ELEMENTS
+    // ========================================
+    
+    // Add hover effects to tech items
+    function initTechItemInteractions() {
+        techItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.15) rotate(5deg)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+            });
+        });
     }
     
     // ========================================
@@ -540,6 +588,8 @@ document.addEventListener('DOMContentLoaded', function() {
         initScrollAnimations();
         initProjectFiltering();
         initContactForm();
+        initTechItemInteractions();
+        initParallaxEffect();
         
         // Set initial states
         handleNavbarScroll();
@@ -548,7 +598,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add loaded class to body
         document.body.classList.add('loaded');
         
-        console.log('Portfolio initialized successfully!');
+        console.log('✨ Portfolio initialized successfully!');
     }
     
     // Initialize when DOM is ready
@@ -561,8 +611,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Preload critical images
     function preloadImages() {
         const criticalImages = [
-            'assets/images/rodolfo_photo.jpg',
-            'assets/images/hero_bg.jpg'
+            'rodolfo.jpg',
+            'web_development.jpg',
+            'ai_concept.jpg'
         ];
         
         criticalImages.forEach(src => {
@@ -578,9 +629,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
             navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                console.log('SW registered: ', registration);
+                console.log('✅ Service Worker registered');
             }).catch(function(registrationError) {
-                console.log('SW registration failed: ', registrationError);
+                console.log('⚠️ Service Worker registration failed');
             });
         });
     }
@@ -592,7 +643,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Focus management
     function manageFocus() {
         const focusableElements = document.querySelectorAll(
-            'a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'
+            'a[href], button, textarea, input[type="text"], input[type="email"], input[type="radio"], input[type="checkbox"], select'
         );
         
         focusableElements.forEach(element => {
@@ -624,11 +675,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // ========================================
 
 window.addEventListener('error', function(e) {
-    console.error('Global error:', e.error);
+    console.error('❌ Global error:', e.error);
 });
 
 window.addEventListener('unhandledrejection', function(e) {
-    console.error('Unhandled promise rejection:', e.reason);
+    console.error('❌ Unhandled promise rejection:', e.reason);
 });
 
 // ========================================
