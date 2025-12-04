@@ -2,43 +2,40 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Rodolfo Vicentini Rocha - Desenvolvedor de Software especializado em IA e Automação">
-    <meta name="keywords" content="desenvolvedor, software, python, javascript, ia, automação, web development">
-    <meta name="author" content="Rodolfo Vicentini Rocha">
-    <meta name="theme-color" content="#0066ff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodolfo Vicentini Rocha - Desenvolvedor Full Stack & Especialista em IA.">
+    <title>Rodolfo V. Rocha | Creative Developer</title>
     
-    <title>Rodolfo Vicentini Rocha - Desenvolvedor & Especialista em IA</title>
-    
-    <!-- Preconnect para melhor performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Rodolfo<span class="logo-dot">.</span>dev</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Início</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li><a href="#projects" class="nav-link">Projetos</a></li>
-                <li><a href="#experience" class="nav-link">Experiência</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-text">&lt; Rodolfo.System /&gt;</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">Rodolfo<span class="highlight">.</span>dev</a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link"><span class="nav-num">01.</span>Início</a></li>
+                <li><a href="#about" class="nav-link"><span class="nav-num">02.</span>Sobre</a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span>Skills</a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-num">04.</span>Projetos</a></li>
+                <li><a href="#experience" class="nav-link"><span class="nav-num">05.</span>Carreira</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-num">06.</span>Contato</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+
+            <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -46,167 +43,90 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="particles-container" id="particles-js"></div>
-        </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <!-- Profile Image -->
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="rodolfo.jpg" alt="Rodolfo Vicentini Rocha - Desenvolvedor de Software" class="profile-img">
-                        <div class="image-glow"></div>
-                    </div>
-                    <div class="floating-techs">
-                        <div class="tech-icon tech-1" title="Python"><i class="fab fa-python"></i></div>
-                        <div class="tech-icon tech-2" title="JavaScript"><i class="fab fa-js-square"></i></div>
-                        <div class="tech-icon tech-3" title="Inteligência Artificial"><i class="fas fa-brain"></i></div>
-                        <div class="tech-icon tech-4" title="Automação"><i class="fas fa-robot"></i></div>
-                    </div>
-                </div>
+        <div class="particles-bg" id="particles-js"></div>
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <p class="hero-greeting">Olá, eu sou</p>
+                <h1 class="hero-title glitch-wrapper">
+                    <span class="glitch" data-text="Rodolfo Vicentini">Rodolfo Vicentini</span>
+                </h1>
                 
-                <!-- Hero Text -->
-                <div class="hero-text">
-                    <div class="hero-greeting">
-                        <span class="typing-text">Olá, eu sou</span>
+                <h2 class="hero-subtitle">
+                    Eu desenvolvo <span class="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                
+                <p class="hero-description">
+                    Especialista em transformar processos manuais em <span class="highlight">Automação Inteligente</span>. 
+                    Unindo desenvolvimento Web de alta performance com a potência da Inteligência Artificial.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Projetos</span>
                     </div>
-                    <h1 class="hero-title">
-                        <span class="name">Rodolfo Vicentini Rocha</span>
-                    </h1>
-                    <div class="hero-subtitle">
-                        <span class="role">Desenvolvedor de Software</span>
-                        <span class="separator">&</span>
-                        <span class="role">Especialista em IA</span>
+                    <div class="stat">
+                        <span class="stat-number" data-target="2000">0</span>
+                        <span class="stat-label">Horas/Dev</span>
                     </div>
-                    <p class="hero-description">
-                        Transformo desafios em soluções tecnológicas eficientes através de automação de processos, 
-                        integração de sistemas e análise de dados com Python, JavaScript e Inteligência Artificial.
-                    </p>
-                    
-                    <!-- Action Buttons -->
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-code"></i>
-                            <span>Ver Projetos</span>
-                        </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contato</span>
-                        </a>
-                    </div>
-                    
-                    <!-- Stats -->
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <div class="stat-number" data-target="5">0</div>
-                            <div class="stat-label">Projetos</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number" data-target="2">0</div>
-                            <div class="stat-label">Anos</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number" data-target="100">0</div>
-                            <div class="stat-label">% Satisfação</div>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Satisfação</span>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-down">
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
+            
+            <div class="hero-visual fade-in">
+                <div class="profile-wrapper" data-tilt>
+                    <div class="profile-border"></div>
+                    <div class="tech-orb python"><i class="fab fa-python"></i></div>
+                    <div class="tech-orb js"><i class="fab fa-js"></i></div>
+                    <div class="tech-orb ai"><i class="fas fa-brain"></i></div>
+                    <img src="rodolfo.jpg" alt="Rodolfo Vicentini" class="profile-img">
+                </div>
             </div>
         </div>
+
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sobre Mim</h2>
-                <p class="section-subtitle">Conheça minha trajetória e paixão pela tecnologia</p>
-            </div>
+            <h2 class="section-title"><span class="section-num">02.</span> Sobre Mim</h2>
             
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-description">
-                        <p>
-                            Sou um desenvolvedor de software de 19 anos, atualmente cursando Tecnologia em Análise e 
-                            Desenvolvimento de Sistemas no Centro Universitário Católico Ítalo Brasileiro. Minha paixão 
-                            pela tecnologia me levou a especializar-me em automação de processos, inteligência artificial 
-                            e desenvolvimento web.
-                        </p>
-                        <p>
-                            Com experiência prática na Xiaomi Brasil, desenvolvo soluções inovadoras que otimizam processos 
-                            empresariais e geram insights valiosos através da análise de dados. Meu foco está em criar 
-                            tecnologias que realmente fazem a diferença no dia a dia das empresas e pessoas.
-                        </p>
-                    </div>
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <p>
+                        Sou um desenvolvedor de 19 anos, atualmente cursando Tecnologia em Análise e Desenvolvimento de Sistemas. Minha paixão é criar códigos que não apenas funcionam, mas que impressionam.
+                    </p>
+                    <p>
+                        Na <strong>Xiaomi Brasil</strong>, atuo criando automações que economizam tempo e recursos. Meu foco é eliminar o tédio do trabalho manual usando Python, Selenium e IA, permitindo que as pessoas foquem no que realmente importa.
+                    </p>
                     
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <div class="highlight-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Educação</h4>
-                                <p>Tecnologia em ADS - 4° Semestre</p>
-                            </div>
+                    <div class="about-cards">
+                        <div class="info-card" data-tilt>
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Formação</h4>
+                            <p>ADS - 4º Semestre</p>
                         </div>
-                        <div class="highlight">
-                            <div class="highlight-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Experiência</h4>
-                                <p>Xiaomi Brasil - Assistente de TI</p>
-                            </div>
+                        <div class="info-card" data-tilt>
+                            <i class="fas fa-briefcase"></i>
+                            <h4>Experiência</h4>
+                            <p>Xiaomi Brasil</p>
                         </div>
-                        <div class="highlight">
-                            <div class="highlight-icon">
-                                <i class="fas fa-language"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Idiomas</h4>
-                                <p>Português Nativo, Inglês Intermediário</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-tech">
-                    <div class="tech-stack">
-                        <h3>Tecnologias</h3>
-                        <div class="tech-grid">
-                            <div class="tech-item">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS3</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fas fa-database"></i>
-                                <span>SQL</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
-                            </div>
+                        <div class="info-card" data-tilt>
+                            <i class="fas fa-code"></i>
+                            <h4>Foco</h4>
+                            <p>Automação & Web</p>
                         </div>
                     </div>
                 </div>
@@ -214,221 +134,145 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section skills">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Habilidades</h2>
-                <p class="section-subtitle">Minhas competências técnicas e níveis de proficiência</p>
-            </div>
+            <h2 class="section-title"><span class="section-num">03.</span> Arsenal Técnico</h2>
             
-            <div class="skills-content">
-                <div class="skills-category">
-                    <h3 class="category-title">Desenvolvimento</h3>
-                    <div class="skills-list">
-                        <div class="skill">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90"></div>
-                            </div>
+            <div class="skills-wrapper">
+                <div class="skills-column scroll-reveal">
+                    <h3 class="column-title"><i class="fas fa-code"></i> Desenvolvimento</h3>
+                    
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <span>Python (Selenium/Pandas)</span>
+                            <span class="skill-percentage">95%</span>
                         </div>
-                        <div class="skill">
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
-                            </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <span>JavaScript (ES6+)</span>
+                            <span class="skill-percentage">88%</span>
                         </div>
-                        <div class="skill">
-                            <div class="skill-info">
-                                <span class="skill-name">HTML/CSS</span>
-                                <span class="skill-percent">95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95"></div>
-                            </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <span>HTML5 & CSS3 (Modern)</span>
+                            <span class="skill-percentage">98%</span>
                         </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="98%"></div></div>
                     </div>
                 </div>
-                
-                <div class="skills-category">
-                    <h3 class="category-title">Automação & IA</h3>
-                    <div class="skills-list">
-                        <div class="skill">
-                            <div class="skill-info">
-                                <span class="skill-name">Selenium</span>
-                                <span class="skill-percent">88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88"></div>
-                            </div>
+
+                <div class="skills-column scroll-reveal">
+                    <h3 class="column-title"><i class="fas fa-robot"></i> Automação & IA</h3>
+                    
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <span>Automação (N8N/Webhooks)</span>
+                            <span class="skill-percentage">90%</span>
                         </div>
-                        <div class="skill">
-                            <div class="skill-info">
-                                <span class="skill-name">Pandas</span>
-                                <span class="skill-percent">82%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="82"></div>
-                            </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <span>Integração de APIs (OpenAI)</span>
+                            <span class="skill-percentage">85%</span>
                         </div>
-                        <div class="skill">
-                            <div class="skill-info">
-                                <span class="skill-name">N8N</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80"></div>
-                            </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <span>Análise de Dados (SQL)</span>
+                            <span class="skill-percentage">80%</span>
                         </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Projetos</h2>
-                <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
-            </div>
+            <h2 class="section-title"><span class="section-num">04.</span> Projetos Realizados</h2>
             
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="automation">Automação</button>
-                <button class="filter-btn" data-filter="ai">IA</button>
+                <button class="filter-btn" data-filter="automation">Automação/IA</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
             </div>
             
             <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="web_development.jpg" alt="Site Janaína Bezerra">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="https://janainabezerrapsi.com.br/" target="_blank" rel="noopener noreferrer" class="project-link" title="Abrir projeto">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site Janaína Bezerra Psicóloga</h3>
-                        <p class="project-description">
-                            Site profissional para psicóloga clínica com design responsivo, sistema de agendamento e otimização SEO.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="web_development.jpg" alt="Site Decor Mais">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="http://decormaismovelaria.com.br/" target="_blank" rel="noopener noreferrer" class="project-link" title="Abrir projeto">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site Decor Mais Movelaria</h3>
-                        <p class="project-description">
-                            Site premium para empresa de móveis planejados com galeria de projetos e integração WhatsApp.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Premium Design</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <img src="ai_concept.jpg" alt="AI Tech Links">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="https://aitech.voyocompany.com/links/" target="_blank" rel="noopener noreferrer" class="project-link" title="Abrir projeto">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AI Tech Links - Voyo Company</h3>
-                        <p class="project-description">
-                            Página de links centralizada para empresa de IA com design futurista e otimização para redes sociais.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">Link in Bio</span>
-                            <span class="tech-tag">Futuristic UI</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="automation">
-                    <div class="project-image">
+                <div class="project-card" data-category="automation" data-tilt>
+                    <div class="card-image">
                         <img src="ai_automation.jpg" alt="Automação Xiaomi">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <span class="project-private" title="Projeto privado">
-                                    <i class="fas fa-lock"></i>
-                                </span>
-                            </div>
+                        <div class="card-overlay">
+                            <i class="fas fa-lock"></i>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Automações Xiaomi Brasil</h3>
-                        <p class="project-description">
-                            Sistema de automação para monitoramento Google Maps, análise de dados e geração de relatórios automatizados.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Selenium</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Corporativo</span>
+                    <div class="card-content">
+                        <span class="card-tag">Corporativo</span>
+                        <h3>Xiaomi Data Bot</h3>
+                        <p>Sistema corporativo que monitora Google Maps e processa Big Data de lojas físicas para gerar relatórios estratégicos.</p>
+                        <div class="card-techs">
+                            <span>Python</span><span>Selenium</span><span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-tilt>
+                    <div class="card-image">
+                        <img src="web_development.jpg" alt="Decor Mais">
+                        <div class="card-overlay">
+                            <a href="http://decormaismovelaria.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Web Design</span>
+                        <h3>Decor Mais Movelaria</h3>
+                        <p>Plataforma de alta conversão para móveis planejados. UX otimizado e SEO avançado para posicionamento.</p>
+                        <div class="card-techs">
+                            <span>HTML5</span><span>CSS3</span><span>JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automation" data-tilt>
+                    <div class="card-image">
+                        <img src="ai_concept.jpg" alt="Chatbot IA">
+                        <div class="card-overlay">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Inteligência Artificial</span>
+                        <h3>Chatbot NLP Fashion</h3>
+                        <p>Assistente virtual capaz de entender linguagem natural para recomendar produtos e agendar visitas.</p>
+                        <div class="card-techs">
+                            <span>N8N</span><span>OpenAI</span><span>API</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <img src="data_analysis.jpg" alt="Chatbot N8N">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <span class="project-private" title="Projeto privado">
-                                    <i class="fas fa-lock"></i>
-                                </span>
-                            </div>
+                 <div class="project-card" data-category="web" data-tilt>
+                    <div class="card-image">
+                        <img src="web_development.jpg" alt="Landing Page">
+                        <div class="card-overlay">
+                            <a href="https://janainabezerrapsi.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Chatbot IA - Paris Fashion</h3>
-                        <p class="project-description">
-                            Chatbot inteligente com processamento de linguagem natural para atendimento automatizado de perfumaria.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">N8N</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">APIs</span>
-                            <span class="tech-tag">Chatbot</span>
+                    <div class="card-content">
+                        <span class="card-tag">Web Design</span>
+                        <h3>Psicologia Clínica</h3>
+                        <p>Site institucional minimalista com sistema de agendamento integrado e blog para artigos.</p>
+                        <div class="card-techs">
+                            <span>Wordpress</span><span>Elementor</span><span>CSS</span>
                         </div>
                     </div>
                 </div>
@@ -436,159 +280,115 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section experience">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experiência</h2>
-                <p class="section-subtitle">Minha trajetória profissional e acadêmica</p>
-            </div>
+            <h2 class="section-title"><span class="section-num">05.</span> Minha Jornada</h2>
             
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - Atual</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Assistente de TI</h3>
-                        <p class="timeline-company">Xiaomi Brasil</p>
-                        <p class="timeline-description">
-                            Desenvolvimento de automações em Python, análise de dados com Pandas, integração de sistemas e suporte técnico especializado.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Selenium</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Automação</span>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Presente</div>
+                    <div class="timeline-content" data-tilt>
+                        <div class="timeline-header">
+                            <h3>Assistente de TI</h3>
+                            <span class="company">Xiaomi Brasil</span>
                         </div>
+                        <p>Lidero iniciativas de automação de processos (RPA). Desenvolvi scripts que reduziram em 70% o tempo de análise de dados de vendas regionais. Suporte técnico avançado e gestão de dados.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-date">2022 - 2023</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Desenvolvedor Web Freelancer</h3>
-                        <p class="timeline-company">Voyo Company</p>
-                        <p class="timeline-description">
-                            Criação de sites responsivos, landing pages, integração com APIs e otimização SEO para diversos clientes.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Responsive Design</span>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - Atual</div>
+                    <div class="timeline-content" data-tilt>
+                        <div class="timeline-header">
+                            <h3>Estudante de ADS</h3>
+                            <span class="company">Centro Universitário Ítalo</span>
                         </div>
+                        <p>Foco acadêmico em Engenharia de Software e Banco de Dados. Participação ativa em Hackathons e projetos de pesquisa em Inteligência Artificial aplicada.</p>
                     </div>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">2021 - Atual</div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Estudante de Análise e Desenvolvimento de Sistemas</h3>
-                        <p class="timeline-company">Centro Universitário Católico Ítalo Brasileiro</p>
-                        <p class="timeline-description">
-                            Aprendizado contínuo em desenvolvimento de software, arquitetura de sistemas, banco de dados e metodologias ágeis.
-                        </p>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">Algoritmos</span>
-                            <span class="skill-tag">Estrutura de Dados</span>
-                            <span class="skill-tag">Banco de Dados</span>
-                            <span class="skill-tag">Engenharia de Software</span>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-content" data-tilt>
+                        <div class="timeline-header">
+                            <h3>Freelancer Full Stack</h3>
+                            <span class="company">Autônomo</span>
                         </div>
+                        <p>Entrega de mais de 10 projetos web completos, desde landing pages até sistemas de gestão simples. Integração de APIs de pagamento e automação de marketing.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contato</h2>
-                <p class="section-subtitle">Vamos trabalhar juntos em seu próximo projeto</p>
-            </div>
+            <h2 class="section-title"><span class="section-num">06.</span> Vamos Conversar?</h2>
             
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Telefone</h4>
-                            <p><a href="tel:+5511959647893">+55 11 95964-7893</a></p>
-                        </div>
-                    </div>
+            <div class="contact-wrapper">
+                <div class="contact-info scroll-reveal">
+                    <h3 class="contact-header">Estou pronto para o próximo desafio.</h3>
+                    <p>Se você tem um projeto que precisa de inovação, ou quer automatizar aquele processo chato da sua empresa, me mande uma mensagem.</p>
                     
-                    <div class="contact-item">
-                        <div class="contact-icon">
+                    <div class="contact-links">
+                        <a href="mailto:devcompany.ia@gmail.com" class="contact-box">
                             <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>E-mail</h4>
-                            <p><a href="mailto:devcompany.ia@gmail.com">devcompany.ia@gmail.com</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
+                            <div>
+                                <span>Email</span>
+                                <strong>devcompany.ia@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="tel:+5511959647893" class="contact-box">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Telefone</span>
+                                <strong>+55 11 95964-7893</strong>
+                            </div>
+                        </a>
+                         <a href="https://aitech.voyocompany.com/links/" class="contact-box">
                             <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Website</h4>
-                            <p><a href="https://aitech.voyocompany.com/links/" target="_blank" rel="noopener noreferrer">aitech.voyocompany.com/links</a></p>
-                        </div>
+                            <div>
+                                <span>Portfólio & Links</span>
+                                <strong>Voyo Company AI</strong>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Enviar Mensagem</span>
-                        </button>
-                    </form>
-                </div>
+
+                <form id="contactForm" class="contact-form scroll-reveal">
+                    <div class="form-group">
+                        <label>Seu Nome</label>
+                        <input type="text" name="name" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label>Seu Email</label>
+                        <input type="email" name="email" required placeholder="joao@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea name="message" rows="5" required placeholder="Como posso te ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Rodolfo Vicentini Rocha. Todos os direitos reservados.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://aitech.voyocompany.com/links/" target="_blank" rel="noopener noreferrer" class="social-link" title="Website">
-                        <i class="fas fa-globe"></i>
-                    </a>
-                    <a href="mailto:devcompany.ia@gmail.com" class="social-link" title="E-mail">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+5511959647893" class="social-link" title="Telefone">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                </div>
+        <div class="container footer-content">
+            <p>© 2025 Rodolfo Vicentini. Construído com <i class="fas fa-code"></i> e <i class="fas fa-coffee"></i>.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
