@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
@@ -29,10 +28,10 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link"><span class="nav-num">01.</span>Início</a></li>
                 <li><a href="#about" class="nav-link"><span class="nav-num">02.</span>Sobre</a></li>
-                <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span>Skills</a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span>Competências</a></li>
                 <li><a href="#projects" class="nav-link"><span class="nav-num">04.</span>Projetos</a></li>
                 <li><a href="#experience" class="nav-link"><span class="nav-num">05.</span>Carreira</a></li>
-                <li><a href="#contact" class="nav-link"><span class="nav-num">06.</span>Contato</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-num">06.</span>Contacto</a></li>
             </ul>
 
             <div class="hamburger">
@@ -46,43 +45,28 @@
     <section id="home" class="hero">
         <div class="particles-bg" id="particles-js"></div>
         <div class="container hero-container">
-            <div class="hero-content fade-up">
-                <p class="hero-greeting">Olá, eu sou</p>
-                <h1 class="hero-title glitch-wrapper">
+            <div class="hero-content">
+                <p class="hero-greeting gsap-hero">Olá, eu sou</p>
+                <h1 class="hero-title glitch-wrapper gsap-hero">
                     <span class="glitch" data-text="Rodolfo Vicentini">Rodolfo Vicentini</span>
                 </h1>
                 
-                <h2 class="hero-subtitle">
+                <h2 class="hero-subtitle gsap-hero">
                     Eu desenvolvo <span class="typing-text"></span><span class="cursor">|</span>
                 </h2>
                 
-                <p class="hero-description">
+                <p class="hero-description gsap-hero">
                     Especialista em transformar processos manuais em <span class="highlight">Automação Inteligente</span>. 
-                    Unindo desenvolvimento Web de alta performance com a potência da Inteligência Artificial.
+                    Unindo desenvolvimento Web de alta performance com a potência da Inteligência Artificial e sistemas de bases de dados escaláveis.
                 </p>
                 
-                <div class="hero-cta">
+                <div class="hero-cta gsap-hero">
                     <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number" data-target="15">0</span>
-                        <span class="stat-label">Projetos</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="2000">0</span>
-                        <span class="stat-label">Horas/Dev</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="100">0</span>
-                        <span class="stat-label">% Satisfação</span>
-                    </div>
+                    <a href="#contact" class="btn btn-outline">Entrar em Contacto</a>
                 </div>
             </div>
             
-            <div class="hero-visual fade-in">
+            <div class="hero-visual gsap-visual">
                 <div class="profile-wrapper" data-tilt>
                     <div class="profile-border"></div>
                     <div class="tech-orb python"><i class="fab fa-python"></i></div>
@@ -101,32 +85,32 @@
 
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title"><span class="section-num">02.</span> Sobre Mim</h2>
+            <h2 class="section-title gs-reveal"><span class="section-num">02.</span> Sobre Mim</h2>
             
             <div class="about-grid">
-                <div class="about-text scroll-reveal">
+                <div class="about-text gs-reveal">
                     <p>
-                        Sou um desenvolvedor de 19 anos, atualmente cursando Tecnologia em Análise e Desenvolvimento de Sistemas. Minha paixão é criar códigos que não apenas funcionam, mas que impressionam.
+                        Sou um desenvolvedor apaixonado por criar arquiteturas de código que não apenas funcionam, mas que impressionam pela eficiência e estética.
                     </p>
                     <p>
-                        Na <strong>Xiaomi Brasil</strong>, atuo criando automações que economizam tempo e recursos. Meu foco é eliminar o tédio do trabalho manual usando Python, Selenium e IA, permitindo que as pessoas foquem no que realmente importa.
+                        Na <strong>Xiaomi Brasil</strong>, atuo criando automações e portais corporativos (como painéis de RH e sistemas de controlo de custos) utilizando integrações com Firebase e Python, otimizando o tempo e os recursos da empresa de forma exponencial.
                     </p>
                     
                     <div class="about-cards">
                         <div class="info-card" data-tilt>
-                            <i class="fas fa-graduation-cap"></i>
-                            <h4>Formação</h4>
-                            <p>ADS - 4º Semestre</p>
+                            <i class="fas fa-database"></i>
+                            <h4>Bases de Dados</h4>
+                            <p>Firebase & SQL</p>
                         </div>
                         <div class="info-card" data-tilt>
                             <i class="fas fa-briefcase"></i>
                             <h4>Experiência</h4>
-                            <p>Xiaomi Brasil</p>
+                            <p>Sistemas Corporativos</p>
                         </div>
                         <div class="info-card" data-tilt>
-                            <i class="fas fa-code"></i>
-                            <h4>Foco</h4>
-                            <p>Automação & Web</p>
+                            <i class="fas fa-magic"></i>
+                            <h4>UX/UI</h4>
+                            <p>GSAP & Scroll 3D</p>
                         </div>
                     </div>
                 </div>
@@ -136,62 +120,37 @@
 
     <section id="skills" class="section skills">
         <div class="container">
-            <h2 class="section-title"><span class="section-num">03.</span> Arsenal Técnico</h2>
+            <h2 class="section-title gs-reveal"><span class="section-num">03.</span> Arsenal Técnico</h2>
             
             <div class="skills-wrapper">
-                <div class="skills-column scroll-reveal">
-                    <h3 class="column-title"><i class="fas fa-code"></i> Desenvolvimento</h3>
-                    
-                    <div class="skill-box">
-                        <div class="skill-header">
-                            <span>Python (Selenium/Pandas)</span>
-                            <span class="skill-percentage">95%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="skill-header">
-                            <span>JavaScript (ES6+)</span>
-                            <span class="skill-percentage">88%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="skill-header">
-                            <span>HTML5 & CSS3 (Modern)</span>
-                            <span class="skill-percentage">98%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="98%"></div></div>
+                <div class="skills-column gs-reveal">
+                    <h3 class="column-title"><i class="fas fa-code"></i> Front-end & Animação</h3>
+                    <div class="skill-tags">
+                        <span class="tech-tag">HTML5 / CSS3 Avançado</span>
+                        <span class="tech-tag">JavaScript (ES6+)</span>
+                        <span class="tech-tag">GSAP (GreenSock)</span>
+                        <span class="tech-tag">ScrollTrigger 3D</span>
+                        <span class="tech-tag">Design Responsivo</span>
                     </div>
                 </div>
 
-                <div class="skills-column scroll-reveal">
-                    <h3 class="column-title"><i class="fas fa-robot"></i> Automação & IA</h3>
-                    
-                    <div class="skill-box">
-                        <div class="skill-header">
-                            <span>Automação (N8N/Webhooks)</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+                <div class="skills-column gs-reveal gs-delay-1">
+                    <h3 class="column-title"><i class="fas fa-server"></i> Back-end & Dados</h3>
+                    <div class="skill-tags">
+                        <span class="tech-tag">Firebase (NoSQL, Auth, Hosting)</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas & Selenium</span>
+                        <span class="tech-tag">Integração de APIs REST</span>
                     </div>
+                </div>
 
-                    <div class="skill-box">
-                        <div class="skill-header">
-                            <span>Integração de APIs (OpenAI)</span>
-                            <span class="skill-percentage">85%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="skill-header">
-                            <span>Análise de Dados (SQL)</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                <div class="skills-column gs-reveal gs-delay-2">
+                    <h3 class="column-title"><i class="fas fa-robot"></i> IA & Automação</h3>
+                    <div class="skill-tags">
+                        <span class="tech-tag">N8N / Webhooks</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Processamento de Dados</span>
+                        <span class="tech-tag">Extração de Dados Web</span>
                     </div>
                 </div>
             </div>
@@ -200,124 +159,162 @@
 
     <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title"><span class="section-num">04.</span> Projetos Realizados</h2>
+            <h2 class="section-title gs-reveal"><span class="section-num">04.</span> Projetos Realizados</h2>
             
-            <div class="projects-filter">
+            <div class="projects-filter gs-reveal">
                 <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="automation">Automação/IA</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="systems">Sistemas & Firebase</button>
+                <button class="filter-btn" data-filter="web">Web & GSAP</button>
             </div>
             
             <div class="projects-grid">
-                <div class="project-card" data-category="automation" data-tilt>
-                    <div class="card-image">
-                        <img src="ai_automation.jpg" alt="Automação Xiaomi">
-                        <div class="card-overlay">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tag">Corporativo</span>
-                        <h3>Xiaomi Data Bot</h3>
-                        <p>Sistema corporativo que monitora Google Maps e processa Big Data de lojas físicas para gerar relatórios estratégicos.</p>
-                        <div class="card-techs">
-                            <span>Python</span><span>Selenium</span><span>Pandas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web" data-tilt>
-                    <div class="card-image">
-                        <img src="web_development.jpg" alt="Decor Mais">
-                        <div class="card-overlay">
-                            <a href="http://decormaismovelaria.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tag">Web Design</span>
-                        <h3>Decor Mais Movelaria</h3>
-                        <p>Plataforma de alta conversão para móveis planejados. UX otimizado e SEO avançado para posicionamento.</p>
-                        <div class="card-techs">
-                            <span>HTML5</span><span>CSS3</span><span>JS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="automation" data-tilt>
-                    <div class="card-image">
-                        <img src="ai_concept.jpg" alt="Chatbot IA">
-                        <div class="card-overlay">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-tag">Inteligência Artificial</span>
-                        <h3>Chatbot NLP Fashion</h3>
-                        <p>Assistente virtual capaz de entender linguagem natural para recomendar produtos e agendar visitas.</p>
-                        <div class="card-techs">
-                            <span>N8N</span><span>OpenAI</span><span>API</span>
-                        </div>
-                    </div>
-                </div>
                 
-                 <div class="project-card" data-category="web" data-tilt>
+                <div class="project-card gs-project" data-category="systems">
                     <div class="card-image">
-                        <img src="web_development.jpg" alt="Landing Page">
-                        <div class="card-overlay">
-                            <a href="https://janainabezerrapsi.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <img src="data_analysis.jpg" alt="Centro de Custos Xiaomi">
+                        <div class="card-overlay"><i class="fas fa-lock"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Sistema Corporativo</span>
+                        <h3>Portal de Controlo de Custos</h3>
+                        <p>Plataforma interna para a Xiaomi com relatórios dinâmicos, registo de despesas e painéis administrativos utilizando base de dados em tempo real.</p>
+                        <div class="card-techs"><span>Firebase</span><span>JavaScript</span><span>Gestão de Dados</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card gs-project" data-category="systems">
+                    <div class="card-image">
+                        <img src="ai_automation.jpg" alt="Portal RH Xiaomi">
+                        <div class="card-overlay"><i class="fas fa-lock"></i></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Sistema Corporativo</span>
+                        <h3>Portal de Recursos Humanos</h3>
+                        <p>Plataforma para gestão de candidaturas e envio seguro de documentos para a Xiaomi Brasil, focado em segurança e UX.</p>
+                        <div class="card-techs"><span>Firebase Auth</span><span>Storage</span><span>Web</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card gs-project" data-category="web">
+                    <div class="card-image">
+                        <img src="web_development.jpg" alt="Carshield Blindadora">
+                        <div class="card-overlay"><a href="https://carshieldblindadora.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Web Design Premium</span>
+                        <h3>Car Shield Blindagens</h3>
+                        <p>Site institucional moderno com <i>showroom</i> e animações fluidas para transmitir segurança e luxo.</p>
+                        <div class="card-techs"><span>GSAP</span><span>HTML/CSS</span><span>Design Responsivo</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card gs-project" data-category="web">
+                    <div class="card-image">
+                        <img src="web_development.jpg" alt="Carshield LP">
+                        <div class="card-overlay"><a href="https://carshieldblindadora.com/lp" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Landing Page</span>
+                        <h3>Car Shield - Alta Conversão</h3>
+                        <p>Página de destino otimizada para captar *leads* interessados em blindagem automóvel de alto padrão.</p>
+                        <div class="card-techs"><span>Performance</span><span>UI/UX</span><span>Animação</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card gs-project" data-category="web">
+                    <div class="card-image">
+                        <img src="hero_bg.jpg" alt="Megaleds Iluminação">
+                        <div class="card-overlay"><a href="https://megaledsiluminacao.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
                     </div>
                     <div class="card-content">
                         <span class="card-tag">Web Design</span>
-                        <h3>Psicologia Clínica</h3>
-                        <p>Site institucional minimalista com sistema de agendamento integrado e blog para artigos.</p>
-                        <div class="card-techs">
-                            <span>Wordpress</span><span>Elementor</span><span>CSS</span>
-                        </div>
+                        <h3>MEGALEDS</h3>
+                        <p>Plataforma elegante e moderna para exposição de catálogo de iluminação de alto nível.</p>
+                        <div class="card-techs"><span>UI Design</span><span>Interações 3D</span></div>
                     </div>
                 </div>
+
+                <div class="project-card gs-project" data-category="web">
+                    <div class="card-image">
+                        <img src="ai_concept.jpg" alt="Jam Criativa">
+                        <div class="card-overlay"><a href="https://jamcriativa.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Agência Criativa</span>
+                        <h3>Jam Criativa</h3>
+                        <p>Desenvolvimento focado na identidade visual forte, com transições dinâmicas para portefólio de agência.</p>
+                        <div class="card-techs"><span>Web Design</span><span>CSS Animations</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card gs-project" data-category="web">
+                    <div class="card-image">
+                        <img src="web_development.jpg" alt="Mestre da Cenografia">
+                        <div class="card-overlay"><a href="http://mestredacenografia.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Landing Page</span>
+                        <h3>Mestre da Cenografia</h3>
+                        <p>Página interativa com alto nível de detalhe visual para promover serviços especializados de cenografia.</p>
+                        <div class="card-techs"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card gs-project" data-category="web">
+                    <div class="card-image">
+                        <img src="web_development.jpg" alt="Janaína Bezerra Psicologia">
+                        <div class="card-overlay"><a href="https://janainabezerrapsi.com.br/" target="_blank"><i class="fas fa-external-link-alt"></i></a></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag">Site Institucional</span>
+                        <h3>Psicologia Clínica</h3>
+                        <p>Plataforma segura e minimalista para apresentação de serviços clínicos e agendamento de consultas.</p>
+                        <div class="card-techs"><span>Web Design</span><span>Responsivo</span></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <section id="experience" class="section experience">
         <div class="container">
-            <h2 class="section-title"><span class="section-num">05.</span> Minha Jornada</h2>
+            <h2 class="section-title gs-reveal"><span class="section-num">05.</span> A Minha Jornada</h2>
             
             <div class="timeline">
-                <div class="timeline-item scroll-reveal">
+                <div class="timeline-item gs-reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2023 - Presente</div>
                     <div class="timeline-content" data-tilt>
                         <div class="timeline-header">
-                            <h3>Assistente de TI</h3>
+                            <h3>Assistente de TI & Desenvolvedor de Sistemas</h3>
                             <span class="company">Xiaomi Brasil</span>
                         </div>
-                        <p>Lidero iniciativas de automação de processos (RPA). Desenvolvi scripts que reduziram em 70% o tempo de análise de dados de vendas regionais. Suporte técnico avançado e gestão de dados.</p>
+                        <p>Desenvolvimento e arquitetura de sistemas internos complexos, como o Portal Global de Helpdesk (MIDESK-GLOBAL), sistemas de RH e painéis de controlo de custos. Extensa utilização de bases de dados Firebase, gestão de acessos e automações de processos robóticos (RPA) com Python.</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item scroll-reveal">
+                <div class="timeline-item gs-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Presente</div>
+                    <div class="timeline-content" data-tilt>
+                        <div class="timeline-header">
+                            <h3>Fundador & Desenvolvedor Principal</h3>
+                            <span class="company">Newtt Agency / LINKIFY</span>
+                        </div>
+                        <p>Liderança no desenvolvimento de projetos de marketing digital e criação de websites de alto desempenho e forte identidade visual, utilizando animações GSAP avançadas e otimização SEO para diversos clientes corporativos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item gs-reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2022 - Atual</div>
                     <div class="timeline-content" data-tilt>
                         <div class="timeline-header">
-                            <h3>Estudante de ADS</h3>
+                            <h3>Estudante de Análise e Desenvolvimento de Sistemas</h3>
                             <span class="company">Centro Universitário Ítalo</span>
                         </div>
-                        <p>Foco acadêmico em Engenharia de Software e Banco de Dados. Participação ativa em Hackathons e projetos de pesquisa em Inteligência Artificial aplicada.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item scroll-reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - 2023</div>
-                    <div class="timeline-content" data-tilt>
-                        <div class="timeline-header">
-                            <h3>Freelancer Full Stack</h3>
-                            <span class="company">Autônomo</span>
-                        </div>
-                        <p>Entrega de mais de 10 projetos web completos, desde landing pages até sistemas de gestão simples. Integração de APIs de pagamento e automação de marketing.</p>
+                        <p>Foco académico em Engenharia de Software, Bases de Dados e Inteligência Artificial. Criação de arquiteturas modulares e escaláveis.</p>
                     </div>
                 </div>
             </div>
@@ -326,12 +323,12 @@
 
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title"><span class="section-num">06.</span> Vamos Conversar?</h2>
+            <h2 class="section-title gs-reveal"><span class="section-num">06.</span> Vamos Conversar?</h2>
             
             <div class="contact-wrapper">
-                <div class="contact-info scroll-reveal">
+                <div class="contact-info gs-reveal">
                     <h3 class="contact-header">Estou pronto para o próximo desafio.</h3>
-                    <p>Se você tem um projeto que precisa de inovação, ou quer automatizar aquele processo chato da sua empresa, me mande uma mensagem.</p>
+                    <p>Seja para construir um sistema completo no Firebase, animar uma plataforma com GSAP, ou automatizar processos vitais da sua empresa, envie-me uma mensagem.</p>
                     
                     <div class="contact-links">
                         <a href="mailto:devcompany.ia@gmail.com" class="contact-box">
@@ -348,7 +345,7 @@
                                 <strong>+55 11 95964-7893</strong>
                             </div>
                         </a>
-                         <a href="https://aitech.voyocompany.com/links/" class="contact-box">
+                         <a href="https://aitech.voyocompany.com/links/" class="contact-box" target="_blank">
                             <i class="fas fa-globe"></i>
                             <div>
                                 <span>Portfólio & Links</span>
@@ -358,18 +355,18 @@
                     </div>
                 </div>
 
-                <form id="contactForm" class="contact-form scroll-reveal">
+                <form id="contactForm" class="contact-form gs-reveal gs-delay-1">
                     <div class="form-group">
-                        <label>Seu Nome</label>
+                        <label>O seu Nome</label>
                         <input type="text" name="name" required placeholder="Ex: João Silva">
                     </div>
                     <div class="form-group">
-                        <label>Seu Email</label>
+                        <label>O seu Email</label>
                         <input type="email" name="email" required placeholder="joao@email.com">
                     </div>
                     <div class="form-group">
                         <label>Mensagem</label>
-                        <textarea name="message" rows="5" required placeholder="Como posso te ajudar?"></textarea>
+                        <textarea name="message" rows="5" required placeholder="Como o posso ajudar?"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
                 </form>
@@ -379,16 +376,18 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <p>© 2025 Rodolfo Vicentini. Construído com <i class="fas fa-code"></i> e <i class="fas fa-coffee"></i>.</p>
+            <p>© 2026 Rodolfo Vicentini. Desenvolvido com <i class="fas fa-code"></i>, GSAP e <i class="fas fa-coffee"></i>.</p>
             <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rodolforocha2006/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
